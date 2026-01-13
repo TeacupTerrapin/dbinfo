@@ -3,7 +3,7 @@ This tool exists to avoid the use of
 ```
 sqlite3 filename.db
 .ta (to see tables)
-PRAGMA table_info(table_name)
+PRAGMA table_info(table_name);
 SELECT count(*) FROM table_name;
 SELECT * FROM table_name LIMIT 1;
 ```
