@@ -10,12 +10,12 @@ SELECT * FROM table_name LIMIT 1;
 DuckDB is better the the SQLite command-line tool, with ```DESCRIBE``` and ```DESCRIBE table_name``` built into it.
 
 Notes
-- The rich package is a dependency not in the Python Standard Library, but this can be removed, along with the inline tags like "[blue]" to work just fine without it
-- It uses DuckDB, but it could be reqritten easily to only require the built-in sqlite3 library.  Using DuckDB allows it to read most CSV files and command outputs from things like "tasklist.exe >filename.txt"
-- See the [DuckDB client API](https://duckdb.org/docs/stable/clients/python/overview) for addtional details on files that can be read
+- The rich package is a dependency not in the Python Standard Library, but this can be removed, along with the inline tags like "[blue]", to work just fine without it
+- It uses DuckDB, but it could be rewritten fairly easily to only require the built-in sqlite3 library (for sqlite files).  Using DuckDB allows it to read most CSV files and command outputs from things like "tasklist.exe >filename.txt"
+- See the [DuckDB client API](https://duckdb.org/docs/stable/clients/python/overview) for addtional details on files that can be read with the DuckDB package
 - I haven't put a lot of thought into making this durable, and I may add parquet functionality later if I need it
 
-Usage: _dbinfo.py filename_
+Usage: ```python dbinfo.py filename```
 
 
 ### Output
